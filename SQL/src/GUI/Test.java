@@ -391,7 +391,6 @@ public class Test extends JFrame{
 			/*Drawing answers.*/
 			while(!check_list.isEmpty()){
 				int index=r.nextInt(check_list.size());
-				System.out.println("index="+index);
 				/*Adds components to horizontal and vertical groups. */
 				horizontal_gl.addGroup(gl.createSequentialGroup()
 										.addComponent(check_list.get(index))

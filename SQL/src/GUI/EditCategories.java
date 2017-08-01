@@ -87,7 +87,6 @@ public class EditCategories extends JFrame implements ActionListener{
 			jta.setBackground(getContentPane().getBackground());
 			jta.setEditable(false);
 			categories_JTA.add(jta);
-			System.out.println("Create component");
 		}
 
 		toolbar=new JToolBar();
@@ -273,18 +272,14 @@ public class EditCategories extends JFrame implements ActionListener{
 				save_buttons.get(i).setVisible(true);
 				categories_JTA.get(i).setEditable(true);
 				categories_JTA.get(i).setBackground(Color.WHITE);
-				System.out.println("Edit button at "+Integer.toString(i+1));
 			}else if(source==save_buttons.get(i)){
 				saveCategory(i);
-				System.out.println("Save button at "+Integer.toString(i+1));
 			}else if(source==delete_buttons.get(i)){
 				deleteCategory(i);
-				System.out.println("Delete button at "+Integer.toString(i+1));
 			}
 		}
 		if(source==addCategory_btn){
 			addCategory();
-			System.out.println("New category");
 		}
 
 	}

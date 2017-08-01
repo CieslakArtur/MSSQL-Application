@@ -66,7 +66,6 @@ public class NewQuestion extends JFrame implements ActionListener{
 	}
 	/**Initialize all components. */
 	private void initUI(){
-		System.out.println("INIT");
 		
 		save_Button=new JButton("Save");
 		save_Button.addActionListener(this);
@@ -148,7 +147,6 @@ public class NewQuestion extends JFrame implements ActionListener{
 	}
 	/**Creates layout with initialized components using 'Group Layout'.*/
 	private void createLayout(){
-		System.out.println("CREATELAY");
 		editPane=new JPanel();
 		GroupLayout gl_editUI=new GroupLayout(editPane);
 		editPane.setLayout(gl_editUI);
@@ -273,7 +271,6 @@ public class NewQuestion extends JFrame implements ActionListener{
 		}
 		/*Conditions for correct answers. */
 		for(int i=0;i<correct_Ans.size();i++){
-			System.out.println("cor size: "+correct_Ans.size());
 			text=correct_Ans_JTA.get(i).getText();
 			answer=correct_Ans.get(i);
 			if(text.length()==0){
@@ -291,7 +288,6 @@ public class NewQuestion extends JFrame implements ActionListener{
 		}
 		/*Conditions for incorrect answers. */
 		for(int i=0;i<incorrect_Ans.size();i++){
-			System.out.println("inc size: "+incorrect_Ans.size());
 			text=incorrect_Ans_JTA.get(i).getText();
 			answer=incorrect_Ans.get(i);
 			if(text.length()==0){
@@ -403,7 +399,6 @@ public class NewQuestion extends JFrame implements ActionListener{
 		Pattern p = Pattern.compile(regex);
 		Matcher m = p.matcher(text);
 		if(m.find()){
-			System.out.println(text+" jest :"+ "niepoprawny");
 			return false;
 		}else{
 			return true;
@@ -414,7 +409,6 @@ public class NewQuestion extends JFrame implements ActionListener{
 	public void actionPerformed(ActionEvent e) {
 		Object source=e.getSource();
 		if(source==save_Button){
-			System.out.println("SAVE!");
 			readData();
 		}else if(source==add_corAns_Button){
 			addCorrectAnswer();

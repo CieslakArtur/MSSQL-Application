@@ -275,7 +275,6 @@ public class Database extends JFrame implements ActionListener,ItemListener{
 			protected Void doInBackground() throws Exception {
 				categories=qController.selectCategories();
 				category_list.add("All categories");
-				System.out.println("CATEG:");
 				for(Category cat:categories){
 					category_list.add(cat.toString());
 				}
@@ -305,7 +304,6 @@ public class Database extends JFrame implements ActionListener,ItemListener{
 		if(index.length!=0 && confirmDialog()){
 			for(int i:index){
 				qController.deleteQuestion(model.getQuestionAt(i));
-				System.out.println("Removing question...");
 			}
 			repaintView();
 		}
@@ -319,14 +317,12 @@ public class Database extends JFrame implements ActionListener,ItemListener{
 			mainMenu.setVisible(true);
 		}else if(source==refresh_btn){
 			repaintView();
-			System.out.println("Ref");
 		}else if(source==checkAnswer_btn){
 			int index=table.getSelectedRow();
 			if(index>=0){
 				messageDialog(model.getQuestionAt(index));
 			}	
 		}else if(source==edit_btn){
-			System.out.println("Edit");
 			int index=table.getSelectedRow();
 			if(index>=0){
 				new EditDatabase(model.getQuestionAt(index));

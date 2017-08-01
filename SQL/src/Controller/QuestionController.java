@@ -274,7 +274,6 @@ public class QuestionController {
 			ResultSet generatedKeys=p_stat.getGeneratedKeys();
 			if(generatedKeys.next()){
 				question.setId(generatedKeys.getInt(1));
-				System.out.println(question.getId());
 			}
 		}catch(SQLException e){
 			e.printStackTrace();
@@ -411,7 +410,6 @@ public class QuestionController {
 			ResultSet generatedKeys=p_stat.getGeneratedKeys();
 			if(generatedKeys.next()){
 				category.setId(generatedKeys.getInt(1));
-				System.out.println(category.getId());
 			}
 		}catch(SQLException e){
 			e.printStackTrace();
@@ -487,7 +485,6 @@ public class QuestionController {
 				questionList.add(new Question(id,category_id,question));
 			}
 		}catch(SQLException e){
-			System.err.println("Problem w pobraniu pytañ");
 			e.printStackTrace();
 			return null;
 		}finally{

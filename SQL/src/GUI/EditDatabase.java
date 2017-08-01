@@ -57,14 +57,12 @@ public class EditDatabase extends JFrame implements ActionListener{
 		correct_Ans=qController.selectCorrectAns(q);
 		incorrect_Ans=qController.selectIncorrectAns(q);
 		
-		System.out.println("Konstruktor");
 		EventQueue.invokeLater(()->{
 			initUI();
 		});
 	}
 	/**Initialize all components. */
 	private void initUI(){
-		System.out.println("INIT");
 		
 		save_btn=new JButton("Save");
 		save_btn.addActionListener(this);
@@ -386,7 +384,6 @@ public class EditDatabase extends JFrame implements ActionListener{
 		Pattern p = Pattern.compile(regex);
 		Matcher m = p.matcher(text);
 		if(m.find()){
-			System.out.println(text+" jest :"+ "niepoprawny");
 			return false;
 		}else{
 			return true;
@@ -397,7 +394,6 @@ public class EditDatabase extends JFrame implements ActionListener{
 	public void actionPerformed(ActionEvent e) {
 		Object source=e.getSource();
 		if(source==save_btn){
-			System.out.println("SAVE!");
 			readData();
 		}else if(source==add_corAns_btn){
 			addCorrectAnswer();
