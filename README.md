@@ -20,7 +20,7 @@ The database store questions and answers from any user-created fields.
 Based on the user-entered data, it is possible to generate a test in a given field.
 </p>
 <p align="center" style="display:block;">
-  <img src="https://image.ibb.co/eOcXLJ/4.jpg"/>
+  <img src="https://image.ibb.co/dFS4Zd/9.jpg"/>
 </p>
 <p align="center" style="display:block;">
   <img src="https://image.ibb.co/jQDYSy/6.jpg"/>
