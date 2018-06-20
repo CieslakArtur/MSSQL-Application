@@ -19,6 +19,7 @@ public class MainMenu extends JFrame{
 			initUI();
 		});
 	}
+	
 	/**Initialize all components and creates layout. */
 	private void initUI(){
 		JPanel menu=new JPanel();
