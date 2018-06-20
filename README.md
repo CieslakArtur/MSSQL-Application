@@ -23,5 +23,5 @@ Based on the user-entered data, it is possible to generate a test in a given fie
   <img src="https://image.ibb.co/eOcXLJ/4.jpg"/>
 </p>
 <p align="center" style="display:block;">
-  <img src="https://image.ibb.co/gU6yud/5.jpg"/>
+  <img src="https://image.ibb.co/jQDYSy/6.jpg"/>
 </p>
