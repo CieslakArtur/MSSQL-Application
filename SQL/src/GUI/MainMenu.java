@@ -47,7 +47,7 @@ public class MainMenu extends JFrame{
 
 		add(menu);
 		pack();
-		setTitle("Baza Pytañ");
+		setTitle("Test");
 		setSize(300,300);
 		setResizable(false);
 		setLocationRelativeTo(null);
