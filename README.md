@@ -8,7 +8,7 @@ The database schema is located in the 'SQL script' folder.
   <img src="https://image.ibb.co/g30c4d/Przechwytywanie.jpg"/>
 </p>
 <p align="left" style="display:block;">
-The database store questions and answers from any user-created fields.
+The application store questions and answers from any user-created fields.
 </p>
 <p align="center" style="display:block;">
   <img src="https://preview.ibb.co/jMGQPd/2.jpg"/>
